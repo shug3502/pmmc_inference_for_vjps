@@ -1,6 +1,5 @@
 # Particle MCMC algorithm to sample parameters of a velocity jump process model 
 # Can be used to examine effects of sampling frequency and measurment noise on inference for a velocity jump process model.
-# Parts of the PMMH algorithm are based on code by Jamie Baker, University of Lancaster, http://www.lancs.ac.uk/~bakerj1/
 # For further details including how to run with arguments from command line, see README
 # Author: Jonathan Harrison, University of Oxford, 11/07/2017
 
