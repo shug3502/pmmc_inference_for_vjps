@@ -7,6 +7,8 @@ This is used in a standard Metropolis-Hastings MCMC sampler.
 The emission probabilities for the particle filter give the probability of observing a certain angle change, given a known pattern of hidden states. 
 The derivation of these is described in our manuscript available at http://www.dtc.ox.ac.uk/people/14/harrisonj/
 
+Note requires the following  R packages to be installed: MASS, mcmc, dplyr 
+
 To run pmmh_simplified.r with command line arguments, ensure that you are in the correct working directory, and use:
 Rscript --vanilla pmmh_simplified.r unique_identifier sigma dt t_end seed
 
