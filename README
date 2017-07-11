@@ -1,0 +1,15 @@
+Author: Jonathan Harrison, University of Oxford
+Date: 11/07/2017
+
+This code implements a particle MCMC algorithm for inference of the parameters of a velocity jump process model.
+A bootstrap particle filter is used to obtain an estimate of the likelihood of observed data given certain parameters.
+This is used in a standard Metropolis-Hastings MCMC sampler.
+The emission probabilities for the particle filter give the probability of obersving a certain angle change, given a known pattern of hidden states. 
+The derivation of these is described in our manuscript available at http://www.dtc.ox.ac.uk/people/14/harrisonj/
+
+To run pmmh_simplified.r with command line arguments, ensure that you are ine correct working directory, and use:
+Rscript --vanilla pmmh_simplified.r unique_identifier sigma dt t_end seed
+
+For example:
+Rscript --vanilla pmmh_simplified.r simplified_v01 0 4 128 123
+This example took 112 seconds to run on a Linux desktop machine.
